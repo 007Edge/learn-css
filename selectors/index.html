@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        #outer {
+            height: 80px;
+            width: auto;
+            background-color: cyan;
+        }
+        .inner {
+            display: inline-block;
+            height: inherit;
+            width: 100px;
+            border-radius: 5px;
+            margin-left: 220px;
+            border: 2px solid black;
+            background-color: goldenrod;
+        }
+
+        p.center {
+            text-align: center;
+            background-color: grey;
+        }
+
+        p.large {
+            font-size:larger;
+            text-align: justify;
+            color: aqua;
+        }
+
+        #animation {
+            height: 100px;
+            width: 100px;
+            background-color: goldenrod;
+            border-radius: 50%;
+            transition: 2s;
+            /* border-radius: 50% leads to formation of circle */
+        }
+
+        #animation:active {
+            background-color: black;
+            transform: scale(2);
+            margin-left: 50%;
+        }
+
+        /*
+
+        element selectors 
+        id selectors  #
+        class selectors  .   p.center {}
+        universal selectors *
+        grouping selectors h1, h2, p {}
+
+        desendant selector
+        adjacent sibling combinator
+        child combinator
+        attribute selector
+        prioritory of selectors
+
+        selector: pseudo-class { property: value; }  
+        pseudo-classes:  hover, active, checked etc
+        selector:: pseudo-element { property: value; } 
+        pseudo-element:: first-letter, first-line, selection
+
+        */
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+
+    <div>
+        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt optio corrupti rem, non animi illo provident excepturi necessitatibus accusantium! Ipsa dolore provident nam repellat explicabo ut cumque est accusantium voluptatibus.</p>
+        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt optio corrupti rem, non animi illo provident excepturi necessitatibus accusantium! Ipsa dolore provident nam repellat explicabo ut cumque est accusantium voluptatibus.</p>
+        <p class="center large">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt optio corrupti rem, non animi illo provident excepturi necessitatibus accusantium! Ipsa dolore provident nam repellat explicabo ut cumque est accusantium voluptatibus.</p>
+    </div>
+
+    <div id="animation"></div>
+
+
+</body>
+</html>
