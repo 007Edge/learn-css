@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjecent Sibling Combinator</title>
+    <style>
+
+        /* NOTE: only the h2 comming just after the div the and is on the same level will be selected*/
+        /* the 2nd h2 will not be selected  */
+        div + h2 {
+            background-color: green;
+            padding: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>div 1</div>
+    <h2>Adjecent Sibling </h2>
+    <h2>Adjecent Sibling on same level</h2>  
+    <!-- above i was talking about this h2 -->
+    
+
+    <div>div 2</div>
+    <h2>Adjecent Sibling </h2>
+
+    <div>div 3</div>
+    <h2>Adjecent Sibling</h2>
+
+</body>
+</html>
