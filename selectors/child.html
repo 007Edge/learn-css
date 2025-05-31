@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator</title>
+
+    <style>
+        /* all the button which are comming under div will be selected */
+        /* this is same as desendent selector the only diffrence between these two is the child selector will only select upto one level  */
+        div > button {
+            background-color: gold;
+            padding: 5px 10px 5px 10px;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div><button>Submit</button></div>
+    <div><button>Submit</button></div>
+    <div>
+        <button>Submit</button>
+        <button>sibling</button>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet a deleniti voluptates accusamus ad non, perspiciatis nobis suscipit, fugit quam corrupti, nulla at quod corporis iusto tempora minima. Ducimus, officiis!</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae temporibus doloremque, nobis, magnam tempora vel voluptas quia ut veritatis voluptatibus. Iusto aliquid quod nobis odio quis excepturi tenetur. Molestiae.</p>
+    </div>
+</body>
+</html>
