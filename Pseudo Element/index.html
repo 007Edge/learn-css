@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Elements</title>
+    <!-- A Keyword that lets you style a specfic part of the selected element -->
+    <!-- 
+        ::first-letter
+        ::first-line
+        ::selection
+    -->
+    <style>
+        p {
+            background-color: grey;
+            color: white;
+            padding: 10px;
+
+        }
+
+        p::first-letter {
+            color: red;
+            font-weight: bold;
+        }
+        /* selection of the text will be in gold color */
+        p::selection {
+            color: gold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dolorem accusamus repudiandae! Iusto atque magni quaerat mollitia iure autem velit quo voluptatem sit vel, animi inventore fuga dolorum iste vero.</p>
+    </div>
+</body>
+</html>
