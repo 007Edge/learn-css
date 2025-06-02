@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        #div1 {
+            height: 100px;
+            width: 100px;
+            background-color: gold;
+            transition: 2s;
+
+        }
+        #div1:active {
+            transform: rotate(180deg);
+        }
+
+        #div2 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: 2s;
+
+        }
+
+        #div2:active {
+            transform:scale(2,2);
+            /* 
+                transform:scale(x, y); 
+            */
+
+            /*  
+                scaleX(2)
+                scaleY(2)    
+            */
+            
+        }
+
+        #div3 {
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            transition: 2s;
+
+        }
+
+        #div3:active {
+            transform: translate(100px, 100px);
+        }
+
+        #div4,#div5 {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            transition: 2s;
+
+        }
+
+        #div4:active {
+            transform: skew(30deg);
+        }
+
+        
+        #div5:active {
+            transform: rotate(45deg) translate(500px, 100px) scale(1.5) skew(5deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">rotate</div>
+    <div id="div2">scale</div>
+    <div id="div3">translate</div>
+    <div id="div4">skew</div>
+    <div id="div5">Together</div>
+</body>
+</html>
