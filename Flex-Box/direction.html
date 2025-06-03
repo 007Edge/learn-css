@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display</title>
+    <!-- by default flex direction will be on main axis -->
+    <!-- 
+        Flex Direction.
+
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: coloumn;
+        flex-direction: coloumn-reverse; 
+    -->
+    <style>
+        #container {
+            height: 300px;
+            width: 80%;
+            background-color: cyan;
+            margin: 10px auto;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        h1 {
+            text-align: center;
+        }
+        #container div {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Playground</h1>
+    <div id="container">
+        <div style="background-color: violet;">violet</div>
+        <div style="background-color: indigo;">indigo</div>
+        <div style="background-color: blue;">blue</div>
+        <div style="background-color: green;">green</div>
+        <div style="background-color: yellow;">yellow</div>
+        <div style="background-color: orange;">orange</div>
+        <div style="background-color: red;">red</div>
+    </div>
+</body>
+</html>
