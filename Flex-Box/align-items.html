@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <!-- 
+        used to align items on cross-axis
+        align-items: 
+
+            center
+            flex-start
+            flex-end
+            stretch
+            baseline
+            normal
+
+    -->
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-end;
+            background-color: gold;
+            height: 300px;
+        }
+        .container > div {
+            height: 100px;
+            width: 100px;
+            margin: 1px;
+            background-color: grey;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
