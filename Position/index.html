@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!-- 
+        Postion - static, relative, absolute, fixed
+        relative: the offset of relative is relative to itself
+        absolute: element is removed from the normal document flow, and no space is created for the element in the page.
+    -->
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            text-align: center;
+            border: 2px solid black;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        #static{
+            background-color: goldenrod;
+            position: static;
+        }
+        #relative{
+            background-color: skyblue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        #absolute {
+            background-color: blueviolet;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        #fixed {
+            background-color: green;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Static Demo</h2>
+        <div></div>
+        <div id="static"></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Relative Demo</h2>
+        <div></div>
+        <div id="relative"></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Absolute Demo</h2>
+        <div></div>
+        <div id="absolute"></div>
+        <div></div>
+    </section>
+
+    <section>
+        <h2>Fixed Demo</h2>
+        <div></div>
+        <div id="fixed">fixed</div>
+        <div></div>
+    </section>
+    
+</body>
+</html>
