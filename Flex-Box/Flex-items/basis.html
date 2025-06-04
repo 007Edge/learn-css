@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        .container {
+            height: 220px;
+            display: flex;
+            background-color: cyan;
+            align-items: flex-start;
+        }
+
+        .container > div {
+            width: 100px;
+            height: 100px;
+            background-color: goldenrod;
+            margin: 5px;
+        }
+        /* sets the inital width of the flex item */
+        .div3 {
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>
