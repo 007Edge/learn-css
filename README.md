@@ -1,6 +1,8 @@
-# learn-css
-1. cascading & specificity
-<br>
-2. !important in css
-<br>
-3. Inheriance
+# Learn CSS
+
+**Left Topics:**
+
+1. **Cascading & Specificity**
+2. **`!important` in CSS**
+3. **Inheritance**
+4. **Grid**
